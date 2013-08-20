@@ -8,7 +8,7 @@ $app->get('/hello', function() {
 });
 
 //deploy
-$app->get('/deploy', function() {
+$app->post('/deploy', function() {
 	`git pull origin master`;
 });
 
