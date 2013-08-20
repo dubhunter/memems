@@ -2,7 +2,12 @@
 
 $app = new \Phalcon\Mvc\Micro();
 
-//Retrieves all robots
+//hello
+$app->get('/deploy', function() {
+	echo '<h1>Hello World</h1>';
+});
+
+//deploy
 $app->get('/deploy', function() {
 	`git pull origin master`;
 });
