@@ -3,6 +3,7 @@
 $app = new \Phalcon\Mvc\Micro();
 
 $app->notFound(function() {
+	header('HTTP/1.1 404');
 	echo '404';
 });
 
