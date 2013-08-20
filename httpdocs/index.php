@@ -15,6 +15,7 @@ $app->get('/hello', function() {
 
 //deploy
 $app->post('/deploy', function() {
+	error_log('/deploy');
 	error_log(`git pull origin master`);
 });
 
