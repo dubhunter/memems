@@ -1,6 +1,13 @@
 <?php
 
+error_log(print_r($_REQUEST, true));
+exit();
+
 $app = new \Phalcon\Mvc\Micro();
+
+$app->notFound(function() {
+	echo '404';
+});
 
 //hello
 $app->get('/hello', function() {
