@@ -3,7 +3,7 @@
 $app = new \Phalcon\Mvc\Micro();
 
 //hello
-$app->get('/deploy', function() {
+$app->get('/hello', function() {
 	echo '<h1>Hello World</h1>';
 });
 
