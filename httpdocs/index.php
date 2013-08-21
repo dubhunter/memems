@@ -19,8 +19,7 @@ $app->get('/goodbye', function() {
 
 //deploy
 $app->post('/deploy', function() {
-	exec('git pull origin master', $output);
-	error_log(implode(PHP_EOL, $output));
+	shell_exec('git pull origin master');
 });
 
 //handle
