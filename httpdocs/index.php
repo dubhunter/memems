@@ -13,6 +13,11 @@ $app->get('/hello', function() {
 	echo '<h1>Hello World</h1>';
 });
 
+//goodby
+$app->get('/goodbye', function() {
+	echo '<h1>Goodbye World</h1>';
+});
+
 //deploy
 $app->post('/deploy', function() {
 	exec('git pull origin master');
