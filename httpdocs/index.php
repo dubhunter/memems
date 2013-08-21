@@ -20,7 +20,7 @@ $app->get('/goodbye', function() {
 
 //deploy
 $app->post('/deploy', function() {
-	exec('whoami', $output);
+	exec('git pull origin master', $output);
 	error_log(implode(PHP_EOL, $output));
 });
 
