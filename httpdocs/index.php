@@ -20,7 +20,7 @@ $app->get('/goodbye', function() {
 
 //deploy
 $app->post('/deploy', function() {
-	exec('pwd', $output);
+	exec('whoami', $output);
 	error_log(implode(PHP_EOL, $output));
 });
 
