@@ -20,7 +20,8 @@ $app->get('/goodbye', function() {
 
 //deploy
 $app->post('/deploy', function() {
-	exec('git pull origin master');
+	exec('git pull origin master', $output);
+	error_log($output);
 });
 
 //handle
