@@ -20,7 +20,7 @@ $app->get('/goodbye', function() {
 
 //deploy
 $app->post('/deploy', function() {
-	exec('git pull origin master', $output);
+	exec('pwd', $output);
 	error_log(implode(PHP_EOL, $output));
 });
 
