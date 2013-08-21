@@ -13,7 +13,7 @@ $app->get('/hello', function() {
 	echo '<h1>Hello World</h1>';
 });
 
-//goodby
+//goodbye
 $app->get('/goodbye', function() {
 	echo '<h1>Goodbye World</h1>';
 });
